@@ -15,8 +15,12 @@ dotenv.config();
 // MONGO_URI=mongodb://localhost/nodeapi
 // mongodb+srv://kaloraat_admin:kkkkkk9@nodeapi-pbn7j.mongodb.net/nodeapi?retryWrites=truenodeAPI?retryWrites=true
 // mongodb+srv://robertchou_admin:Aeiourc2491@nodeapi-p2o93.mongodb.net/nodeapi?retryWrites=true&w=majority
+
+const MONGO_URI = 'mongodb://prabhakar:Prabhakar028@ds215229.mlab.com:15229/complainportal'
+
+//const MONGO_URI ='mongodb://kaloraat:dhungel8@ds257054.mlab.com:57054/nodeapi'
 mongoose
-    .connect(process.env.MONGO_URI, {
+    .connect(MONGO_URI, {
         useNewUrlParser: true
     })
     .then(() => console.log('DB Connected'));

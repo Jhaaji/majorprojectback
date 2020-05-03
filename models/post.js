@@ -18,6 +18,13 @@ const postSchema = new mongoose.Schema({
         type: ObjectId,
         ref: 'User'
     },
+    area: {
+        type : String
+    },
+    category: {
+        type: String,
+        default: "Electricity"
+    },
     created: {
         type: Date,
         default: Date.now
